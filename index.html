@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人简历 | Resume</title>
+    <meta name="description" content="个人简历与项目经历展示网站" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="ambient" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark"></span>
+        <span id="brandName">Resume</span>
+      </a>
+      <nav aria-label="页面导航">
+        <a href="#about">概览</a>
+        <a href="#experience">经历</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" id="headline">个人简历</p>
+          <h1 id="name">等待填充姓名</h1>
+          <p class="summary" id="summary">
+            当前网站已经搭建完成。把 Word 简历文件放入当前文件夹后，我可以继续提取并整合真实履历内容。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">联系我</a>
+            <a class="button ghost" href="#projects">查看项目</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel reveal" aria-label="简历概要">
+          <div class="avatar" id="avatar">R</div>
+          <div>
+            <p class="panel-label">Current Focus</p>
+            <h2 id="role">待补充目标岗位</h2>
+          </div>
+          <dl class="quick-facts" id="quickFacts"></dl>
+        </aside>
+      </section>
+
+      <section class="section intro-grid" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Profile</p>
+          <h2>简洁、有重点的个人画像</h2>
+        </div>
+        <div class="glass-block reveal">
+          <p id="aboutText">
+            简历信息暂未提取。这里将用于呈现你的教育背景、优势能力、求职方向和核心亮点。
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>能力结构</h2>
+        </div>
+        <div class="tag-cloud reveal" id="skillsList"></div>
+      </section>
+
+      <section class="section timeline-wrap" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>教育与经历</h2>
+        </div>
+        <div class="timeline" id="experienceList"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>代表项目</h2>
+        </div>
+        <div class="project-grid" id="projectList"></div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>让合适的机会快速找到你</h2>
+          <div class="contact-links" id="contactLinks"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
