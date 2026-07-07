@@ -8,7 +8,7 @@
 
 https://skychutt.github.io/Personal-Resume/
 
-这个地址部署在 GitHub Pages 上，别人可以直接访问，不依赖你的电脑是否开机。
+这个地址部署在 GitHub Pages 上，可直接访问，不依赖本地电脑是否开机。
 
 ## 本地查看
 
